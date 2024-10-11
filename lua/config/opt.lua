@@ -30,6 +30,12 @@ vim.opt.relativenumber = true
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
+vim.opt.expandtab = true -- Use spaces instead of tabs
+vim.opt.shiftwidth = 2 -- Number of spaces for auto-indent
+vim.opt.tabstop = 2 -- Number of spaces a tab counts for
+vim.opt.softtabstop = 2 -- Number of spaces a tab counts for while editing
+vim.opt.smartindent = true -- Auto-indent new lines
+
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
 --  Remove this option if you want your OS clipboard to remain independent.
